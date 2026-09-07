@@ -13,7 +13,7 @@ namespace WpfAppAes_Gcm256WithSAlt
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
-    /// </summary>
+    /// </summary>  Das Programm wurde von Ahmad Khaddam erstellt
     public partial class MainWindow : Window
     {
         public MainWindow()
