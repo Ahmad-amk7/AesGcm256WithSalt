@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfAppAes_Gcm256WithSAlt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppAes_Gcm256WithSAlt"
+        mc:Ignorable="d"
+        Title="AesGcm 256 with Salt" Height="633" Width="978" Background="#FF8D9CAD">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="309*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas Grid.ColumnSpan="2">
+            <TextBox x:Name="textNormal" Canvas.Left="27.659" TextWrapping="Wrap" Canvas.Top="111.922" Width="291" HorizontalAlignment="Center" Height="436" VerticalAlignment="Top"/>
+            <TextBox x:Name="textEncrypt" Canvas.Left="332" TextWrapping="Wrap" Canvas.Top="111.922" Width="291" HorizontalAlignment="Center" Height="436" VerticalAlignment="Top"/>
+            <TextBox x:Name="textDecrypt" Canvas.Left="640.864" TextWrapping="Wrap" Canvas.Top="111.922" Width="291" HorizontalAlignment="Center" Height="436" VerticalAlignment="Top"/>
+            <Label Content="Password" Canvas.Left="27.659" Canvas.Top="40.29" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label Content="Text to encryption" Canvas.Left="27.659" Canvas.Top="78.302" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Content="Encrypted text" Canvas.Left="332" Canvas.Top="78.302" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Content="Decrypted Text" Canvas.Left="640.864" Canvas.Top="78.302" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Button x:Name="encryptButton" Content="Encryption" Canvas.Left="173.159" Canvas.Top="80.612" HorizontalAlignment="Center" VerticalAlignment="Top" Width="146" Height="24" Background="#FF2953FD" FontWeight="Bold" FontSize="14" Foreground="White" Click="encryptButton_Click"/>
+            <Button x:Name="decryptButton" Content="Decryption" Canvas.Left="477" Canvas.Top="80.612" HorizontalAlignment="Center" VerticalAlignment="Top" Width="146" Height="24" FontWeight="Bold" FontSize="14" Foreground="White" Background="#FF1A9C46" Click="decryptButton_Click"/>
+            <PasswordBox x:Name="textPass" Canvas.Left="105.341" Canvas.Top="40.29" Width="518" HorizontalAlignment="Left" Height="29" VerticalAlignment="Center"/>
+            <Label Content="by Ahmad Khaddam" Canvas.Left="828.408" Canvas.Top="22.34"/>
+        </Canvas>
+
+    </Grid>
+</Window>
