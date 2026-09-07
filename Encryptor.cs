@@ -4,6 +4,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Documents;
 
+// Das Programm wurde von Ahmad Khaddam erstellt. 
 namespace WpfAppAes_Gcm256WithSAlt;
 
 internal class Encryptor
